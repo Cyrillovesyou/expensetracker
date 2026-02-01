@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expense Tracker</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <link rel="stylesheet" href="style.css" />
+  <body>
+    <div class="container">
+      <div class="theme-toggle">
+        <i class="fa-solid fa-moon" id="theme-icon"></i>
+      </div>
+
+      <h1>Expense Tracker</h1>
+      <!-- <strong>Total:</strong> Ksh <span id="total-amount">0</span> -->
+      <form id="expense-form">
+        <div class="input-group">
+          <i class="fa-solid fa-pen"></i>
+          <input
+            type="text"
+            placeholder="Expense Name"
+            id="expense-name"
+            required
+          />
+        </div>
+        <div class="input-group">
+          <i class="fa-solid fa-coins"></i>
+          <input
+            type="number"
+            placeholder="Amount"
+            id="expense-amount"
+            required
+          />
+        </div>
+
+        <div class="input-group">
+          <i class="fa-solid fa-list"></i>
+          <select id="options-category">
+            <option value="" disabled selected>Select Category</option>
+            <option value="Entertainment">Entertainment</option>
+            <option value="Food">Food</option>
+            <option value="Transport">Transport</option>
+            <option value="Rent">Rent</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+
+        <div class="input-group">
+          <i class="fa-solid fa-calendar"></i>
+          <input type="date" id="expense-date" required />
+        </div>
+
+        <button type="submit"><i class="fa-solid fa-plus"></i>Add</button>
+      </form>
+      <div class="expense-table">
+        <table>
+          <thead>
+            <tr>
+              <th><i class="fa-solid fa-tag"></i> Expense</th>
+              <th><i class="fa-solid fa-money-bill"></i> Amount</th>
+              <th><i class="fa-solid fa-layer-group"></i> Category</th>
+              <th><i class="fa-solid fa-calendar-days"></i> Date</th>
+              <th><i class="fa-solid fa-trash"></i> Action</th>
+            </tr>
+          </thead>
+          <tbody id="expense-list"></tbody>
+        </table>
+        <div class="total-amount">
+          <strong>Total:</strong> Ksh <span id="total-amount">0</span>
+        </div>
+      </div>
+      <div class="filter">
+        <label for="filter-category">Filter by Category:</label>
+        <select id="filter-category">
+          <option value="All">All</option>
+          <option value="Entertainment">Entertainment</option>
+          <option value="Food">Food</option>
+          <option value="Rent">Rent</option>
+          <option value="Transport">Transport</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
