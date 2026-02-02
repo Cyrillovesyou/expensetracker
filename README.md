@@ -1,17 +1,36 @@
-A simple web application app for tracking daily expenses by category.
+# Expense Tracker Web App
 
-Features
--Add and delete expenses 
--Category filtering
--Automatic total calculation
--Responsive Design
+A simple and responsive **Expense Tracker** web application built using **HTML**, **CSS**, and **JavaScript**.  
+The app helps users record daily expenses, categorize them, and view total spending easily.
 
-Technologies Used
--HTML
--CSS
--Javascript
+---
 
-Live Demo:  https://cyrillovesyou.github.io/expensetracker/
+##  Features
+
+- Add expenses with name, amount, and category
+- View a list of all recorded expenses
+- Automatically calculate total expenses
+- Filter expenses by category
+- Responsive design (works on desktop and mobile)
+- Clean and user-friendly interface
+
+---
+
+## Technologies Used
+
+- HTML5
+- CSS3
+- JavaScript (Vanilla JS)
+
+---
+
+## Project Structure
+├── index.html
+├── style.css
+├── script.js
+└── README.md
+
+
 
 
 <img width="883" height="368" alt="image" src="https://github.com/user-attachments/assets/410e020e-e886-43a6-a878-f3b26c7ed179" />
